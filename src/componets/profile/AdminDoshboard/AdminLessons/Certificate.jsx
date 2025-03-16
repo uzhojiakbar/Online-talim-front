@@ -8,13 +8,14 @@ function Certificate({ correctPercentage: score, fannomi }) {
   const surname = userdata?.lastname;
   const group = userdata.group;
 
+
   const downloadCertificate = async () => {
     const data = {
-      isFinish: 1,
-      name: "Hojiakbar",
-      surname: "Murodillayev",
-      fannomi: "web",
-      score: "80",
+      isFinish: finish,
+      name: name,
+      surname: surname,
+      fannomi: fannomi,
+      score: score,
     };
 
     try {
