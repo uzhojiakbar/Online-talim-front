@@ -19,7 +19,9 @@ function Certificate({ correctPercentage: score, fannomi }) {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/test/generate-certificate",
+
+        "http://37.27.215.130:5013/api/test/generate-certificate",
+
         {
           method: "POST",
           headers: {
