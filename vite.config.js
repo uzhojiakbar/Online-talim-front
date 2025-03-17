@@ -8,18 +8,18 @@ export default defineConfig({
     proxy: {
       "/api": {
         // target: "http://37.27.215.130:5013", // Proksi sifatida ishlatiladigan server manzili
-        target: "http://localhost:3000", // Backend manzili
+        target: "http://37.27.215.130:5013/", // Backend manzili
 
         changeOrigin: true, // Serverga kelayotgan so'rovni o'zgartirish
         secure: false, // Agar HTTPS bo'lsa, buni true qilib qo'yishingiz mumkin
         // pathRewrite: { '^/api': '' }, // Agar yo'lni o'zgartirmoqchi bo'lsangiz
       },
     },
-    server: {
-    port: 5017,
+  },
+  server: {
+    port: 5014,
   },
   preview: {
-    port: 5017,
-  },
+    port: 5014,
   },
 });
